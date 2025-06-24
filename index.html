@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Finder</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/pirate/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/app.js" defer></script>
+</head>
+<body>
+    <main id="game-container">
+
+        <header id="title-container">
+            <h1>FORTUNE FINDER</h1>
+        </header>
+
+        <section id="game-wrapper">
+            <div id="splash-screen-container"></div>
+            <div id="game-grid"></div>
+            <aside id="setup-scroll-container"></aside>
+        </section>
+
+        <section id="sidebar">
+            <div id="menu-bars">
+                <div class="menu-bar" id="bar1"></div>
+                <div class="menu-bar" id="bar2"></div>
+                <div class="menu-bar" id="bar3"></div>
+            </div>
+
+            <section id="menu">
+                <div id="menu-btns">
+                    <button class="menu-btn" id="continue-game-btn">CONTINUE GAME</button>
+                    <button class="menu-btn" id="new-game-btn">NEW GAME</button>
+                    <button class="menu-btn" id="rules-btn">GAME RULES</button>
+                    <button class="menu-btn" id="options-btn">OPTIONS</button>
+                    <button class="menu-btn" id="hi-scores-btn">HIGH SCORES</button>
+                </div>
+
+                <div id="player-stats">
+                    <div class="stats">
+                        <p>LIVES REMAINING</p>
+                        <div id="lives-stat"></div>
+                    </div>
+                    <div class="stats">
+                        <p>Xs REMAINING</p>
+                        <div id="x-stat"></div>
+                    </div>
+                    <div class="stats">
+                        <p>FORTUNES REMAINING</p>
+                        <div id="fortunes-stat"></div>
+                    </div>
+                    <div class="stats">
+                        <p>SCORE</p>
+                        <div id="score-stat"></div>
+                    </div>
+                </div>
+
+                <aside id="menu-helper"></aside>
+            </section>
+        </section>
+        
+        <section id="lvl-tracker">
+            <h2 id="lvl-number"></h2>
+        </section>
+    </main>
+</body>
+</html>
