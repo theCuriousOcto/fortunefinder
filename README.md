@@ -3,13 +3,13 @@
 
 ## About This Project
 
-First and foremost, this project is for fun. It's a way for me to hone my skills in HTML, CSS, and vanilla JavaScript while remaining interested and engaged. Along the way, I hope to inspire others creatively.
+First and foremost, this project is for fun. It's a way for me to hone my skills on git, GitHub, HTML, CSS, and vanilla JavaScript while remaining engaged. Along the way, I hope to inspire others in fun and creative ways.
 
 ## How To Play Fortune Finder
 
 The game is simple: It's kinda like Minesweeper, but in reverse! Click on spaces in the provided game grid and try to find hidden fortunes.
 
-The player starts with 2 lives and up to 7 "markers" they'll use to try to find these fortunes. Start by placing down one or more markers on the game grid. Then, click on the button to check the places you marked! If you discover at least one (1) fortune, keep going! The spaces you missed will show you how many *adjacent* fortunes are hiding around it. If you didn't find any fortunes, you'll lose one (1) life. If you have no more left, it's Game Over!
+The player starts with 2 lives and up to 7 "markers" they'll use to try to find these fortunes. Start by placing down one or more markers on the game grid. Then, click on the button to check the places you marked! If you discover at least 1 fortune, keep going! The spaces you missed will show you how many *adjacent* fortunes are hiding around it. If you didn't find any fortunes, you'll lose 1 life. If you have no more left, it's Game Over!
 
 Play a quick game on its own, or go for endless mode and keep going until you can't anymore. Try to beat your own high scores!
 
