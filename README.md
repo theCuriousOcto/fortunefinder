@@ -1,78 +1,66 @@
 
 # Fortune Finder
 
----
-
 ## About This Project
-
----
 
 First and foremost, this project is for fun. It's a way for me to hone my skills in HTML, CSS, and vanilla JavaScript while remaining interested and engaged. Along the way, I hope to inspire others creatively.
 
----
-
 ## How To Play Fortune Finder
-
----
 
 The game is simple: It's kinda like Minesweeper, but in reverse! Click on spaces in the provided game grid and try to find hidden fortunes.
 
-The player starts with two (2) lives and up to seven (7) "markers" they'll use to try to find these fortunes. Start by placing down one or more markers on the game grid. Then, click on the button to check the places you marked! If you discover at least one (1) fortune, keep going! The spaces you missed will show you how many *adjacent* fortunes are hiding around it. If you didn't find any fortunes, you'll lose one (1) life. If you have no more left, it's Game Over!
+The player starts with 2 lives and up to 7 "markers" they'll use to try to find these fortunes. Start by placing down one or more markers on the game grid. Then, click on the button to check the places you marked! If you discover at least one (1) fortune, keep going! The spaces you missed will show you how many *adjacent* fortunes are hiding around it. If you didn't find any fortunes, you'll lose one (1) life. If you have no more left, it's Game Over!
 
 Play a quick game on its own, or go for endless mode and keep going until you can't anymore. Try to beat your own high scores!
+
 
 **Controls:**
 - Left-Mouse: Place a marker on a space
 - Right-Mouse: Place an "Ignored" marker on a space (to remind yourself to ignore it!)
 
----
-
 ## Game Feature Checklist (To-Do's)
 
----
+> *KEY:*  
+> [x] - completed  
+> [p] - partially completed  
+> [c] - currently working on  
+> [ ] - not started  
+> [w] - wishlist item (may never complete)  
 
-> *KEY:*
-> [x] - completed
-> [p] - partially completed
-> [c] - currently working on
-> [ ] - not started
-> [w] - wishlist item (may never complete)
-
-- [p] -- Web page layout
-- [x] -- Game grid layout
-- [x] -- Game grid mouse activity
-- [x] -- Base theme image assets
-- [ ] -- Game grid event logic
-- [c] -- Sidebar layout
-- [p] -- Menu layout
-- [ ] -- Menu container layout
-- [ ] -- Sidebar mouse activity
-- [ ] -- Sidebar event logic
-- [ ] -- Persistent data
-- [ ] -- New game feature
-- [ ] -- Load/continue game feature
-- [p] -- Create grid from "map templates"
-- [x] -- Create "map templates"
-- [p] -- CSS variables created and hooked up
-- [ ] -- Include audio (music)
-- [w] -- Include audio (SFX)
-- [ ] -- High score page layout
-- [ ] -- Game over event logic
-- [p] -- JS classes/global objects created
-- [ ] -- Additional themes: Space/Sci-Fi
-- [ ] -- Additional themes: Colorful Abstract
-- [w] -- Additional themes: Cyberpunk/Synthwave
-- [w] -- Additional themes: Ocean Floor
-- [w] -- Additional themes: Woodland Critters
-- [w] -- Additional themes: Spooky?
-- [w] -- Additional themes: Volcano/Deep Earth
-- [w] -- Additional themes: Rainforest
+[p] -- Create repo paths/folders/files
+[p] -- Web page layout
+[x] -- Game grid layout
+[x] -- Game grid mouse activity
+[x] -- Base theme image assets
+[ ] -- Game grid event logic
+[c] -- Sidebar layout
+[p] -- Menu layout
+[ ] -- Menu container layout
+[ ] -- Sidebar mouse activity
+[ ] -- Sidebar event logic
+[ ] -- Persistent data
+[ ] -- New game feature
+[ ] -- Load/continue game feature
+[p] -- Create grid from "map templates"
+[x] -- Create "map templates"
+[p] -- CSS variables created and hooked up
+[ ] -- Include audio (music)
+[w] -- Include audio (SFX)
+[ ] -- High score page layout
+[ ] -- Game over event logic
+[p] -- JS classes/global objects created
+[ ] -- Additional themes: Space/Sci-Fi
+[ ] -- Additional themes: Colorful Abstract
+[w] -- Additional themes: Cyberpunk/Synthwave
+[w] -- Additional themes: Ocean Floor
+[w] -- Additional themes: Woodland Critters
+[w] -- Additional themes: Spooky?
+[w] -- Additional themes: Volcano/Deep Earth
+[w] -- Additional themes: Rainforest
 
 ---
 
 ## Dev Log
-
----
 
 ### 6/23/25
 
