@@ -1,3 +1,201 @@
 * {
     outline: 1px dotted red;
 }
+
+:root {
+    --menu-bar: none;
+    --found-fortune: none;
+    --lost-fortune: none;
+    --square-background: none;
+    --x: url("../assets/imgs/abstract/white-x.svg");
+    --menu-button: none;
+    --ignore: url("../assets/imgs/abstract/scribble.png");
+    --splash-screen: none;
+    --setup-screen: none;
+    --lives: none;
+    --burst-img: none;
+    --title-banner: none;
+    --square-size: 50px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    padding: 30px;
+    margin: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#game-container {
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "title title"
+    "game sidebar"
+    "level sidebar";
+}
+
+#title-container {
+    grid-area: title;
+}
+
+#game-wrapper {
+    grid-area: game;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#splash-screen-container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-image: var(--splash-screen);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    max-width: calc((var(--square-size) * 9) + 34px);
+    margin: auto;
+}
+
+.grid-square {
+    height: var(--square-size);
+    width: var(--square-size);
+    text-align: center;
+    vertical-align: middle;
+    line-height: var(--square-size);
+    font-size: 24px;
+    user-select: none;
+    position: relative;
+    transition: transform 0.1s, width 0.4s ease, height 0.4d ease;
+    background-image: var(--square-background);
+    background-position: center;
+    background-size: contain;
+}
+
+.grid-square, .menu-btn {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.grid-square::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transition: inset 0.1s;
+}
+
+.grid-square:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    z-index: 10;
+}
+
+.grid-square:hover::before {
+    inset: calc(var(--square-size) * -0.1);
+}
+
+.grid-square.square-clicked {
+    transform: scale(90%);
+}
+
+#lvl-tracker {
+    grid-area: level;
+    min-height: 25px;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    position: relative;
+}
+
+#menu-bars {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+}
+
+#menu-bars:hover {
+    transform: scale(105%);
+}
+
+#menu-bars:active {
+    transform: scale(95%);
+}
+
+.menu-bar {
+    width: 45px;
+    height: 12px;
+    transition: 0.4s;
+    background-color: #333;
+    background-image: var(--menu-bar);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.menu-open#bar1 {
+    transform: translate(0, 12px) rotate(-45deg);
+}
+
+.menu-open#bar2 {
+    opacity: 0;
+}
+
+.menu-open#bar3 {
+    transform: translate(0, -12px) rotate(45deg);
+}
+
+#menu {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#menu-btns {
+    height: calc(100% - 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-btn {
+    background-image: var(--menu-button);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menu-helper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+.theme-pirate {
+    --menu-bar: url("../../assets/imgs/pirate/plank.png");
+    --found-fortune: url("../../assets/imgs/pirate/open-chest.png");
+    --lost-fortune: url("../../assets/imgs/pirate/closed-chest.png");
+    --square-background: url("../../assets/imgs/pirate/sand.jpg");
+    --x: url("../../assets/imgs/pirate/red-x.png");
+    --menu-button: url("../../assets/imgs/pirate/plank.png");
+    --ignore: url("../../assets/imgs/pirate/rock.png");
+    --splash-screen: url("../../assets/imgs/pirate/splash-screen.png");
+    --setup-screen: url("../../assets/imgs/pirate/map.png");
+    --lives: url("../../assets/imgs/pirate/crossbones.png");
+    --burst-img: url("../../assets/imgs/pirate/doubloon.png");
+    --title-banner: url("../../assets/imgs/pirate/title-banner.png");
+}

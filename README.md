@@ -60,6 +60,18 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 
 ## Dev Log
 
+### 6/25/25
+
+Started main.css and pirate.css. Continued work on index.html.
+
+Created credits.txt to keep track of all asset origins.
+
+### 6/24/25
+
+Created index.html structure.
+
+Created map-template.json and MapTemplates class.
+
 ### 6/23/25
 
 Created README.md file, including To-Do list and dev log.
