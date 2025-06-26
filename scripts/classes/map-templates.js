@@ -15,14 +15,6 @@ export default class MapTemplates {
         return this;
     }
 
-    getMaps() {
-        if (!this.#maps) {
-            console.log("MapTemplates attempted to return maps, but maps weren't initialized.");
-            return;
-        }
-        return this.#maps;
-    }
-
     getMap(key) {
         if (!this.#maps) {
             console.log("MapTemplates attempted to return maps, but maps weren't initialized.");

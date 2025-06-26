@@ -31,16 +31,18 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 [p] -- Web page layout  
 [x] -- Game grid layout  
 [x] -- Game grid mouse activity  
-[x] -- Base theme image assets  
+[x] -- Base theme image assets
+[c] -- Game grid classes
+[c] -- Additional classes  
 [ ] -- Game grid event logic  
-[c] -- Sidebar layout  
+[p] -- Sidebar layout  
 [p] -- Menu layout  
 [ ] -- Menu container layout  
 [ ] -- Sidebar mouse activity  
 [ ] -- Sidebar event logic  
-[ ] -- Persistent data  
+[p] -- Persistent data  
 [ ] -- New game feature  
-[ ] -- Load/continue game feature  
+[p] -- Load/continue game feature  
 [p] -- Create grid from "map templates"  
 [x] -- Create "map templates"  
 [p] -- CSS variables created and hooked up  
@@ -61,6 +63,8 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 ## Dev Log
 
 ### 6/25/25
+
+Created several class .js files. Began working on BoardHandler and related classes.
 
 Started main.css and pirate.css. Continued work on index.html.
 
