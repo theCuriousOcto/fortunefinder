@@ -69,6 +69,7 @@ export default class BoardHandler {
     /**
      * Iterates through an array of arrays, getting each Map key and updating provided values.
      * @param {Array} arr - An array consisting of smaller arrays, arranged in [key, value] format.
+     * @returns Itself, for chaining.
      */
     updateBoardStates(arr) {
         for (const [key, value] of arr) {
@@ -80,5 +81,18 @@ export default class BoardHandler {
 
     getMap() {
         return this.#map;
+    }
+
+    /**
+     * 
+     * @param {*} keys The array of keys to fetch.
+     * @returns A list of arrays containing the GridSquares that'll be used in rendering.
+     */
+    getSquares(keys) {
+        const resultsArr = [];
+        for (const key of keys) {
+            resultsArr.push(this.#map.get(key));
+        }
+        return resultsArr;
     }
 }
