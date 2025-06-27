@@ -1,25 +1,25 @@
-export default class MapTemplates {
-    #maps = new Map();
+const template = new Map();
 
-    async init() {
-        const response = await fetch(".assets/json/map-templates.json");
-        const data = response.ok ? response.json() : [];
+async function init() {
+    const response = fetch("../../assets/json/map-templates.json");
+    const data = response.ok ? await response.json() : [];
 
-        const results = new Map();
-        for (const row of data) {
-            const key = row.shift();
-            results.set(key, row);
-        }
-
-        this.#maps = results;
-        return this;
-    }
-
-    getMap(key) {
-        if (!this.#maps) {
-            console.log("MapTemplates attempted to return maps, but maps weren't initialized.");
-            return;
-        }
-        return this.#maps.get(key);
+    for (const row of data) {
+        const key = row[0];
+        template.set(key, row);
     }
 }
+
+function getMap(key) {
+    if (template.size === 0) {
+        console.warn("Attempted to retrieve map while template wasn't initialized.");
+        return;
+    }
+
+    return template.get(key);
+}
+
+export default {
+    init, 
+    getMap
+};
