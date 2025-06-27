@@ -62,6 +62,12 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 
 ## Dev Log
 
+### 6/26/25
+
+Continued work on BoardHandler, GridSquare, GridStates, MapTemplates, Renderer, and more.
+
+Began to update some classes into plain objects/utility functions instead.
+
 ### 6/25/25
 
 Created several class .js files. Began working on BoardHandler and related classes.

@@ -8,17 +8,8 @@ export default class GridSquare {
         this.hasChest = hasChest;
     }
 
-    serialize() {
-        return {
-            num: this.num,
-            isValid: this.isValid,
-            state: this.state,
-            hasChest: this.hasChest
-        };
-    }
-
-    deserialize(squareObj) {
-        const {num, isValid, state, hasChest} = squareObj;
+    static fromObject(obj) {
+        const {num, isValid, state, hasChest} = obj;
         return new GridSquare(num, isValid, state, hasChest);
     }
 }
