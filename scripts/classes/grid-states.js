@@ -1,7 +1,9 @@
-export default class GridStates{
-    static hidden = "hidden";
-    static empty = "empty";
-    static dug = "dug";
-    static x = "x";
-    static ignored = "ignored";
-}
+const GridStates = {
+    HIDDEN: "hidden",
+    X: "x",
+    IGNORED: "ignored",
+    DUG: "dug",
+    EMPTY: "empty"
+};
+
+export default GridStates;

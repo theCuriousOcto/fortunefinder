@@ -27,7 +27,7 @@ export default class BoardHandler {
         return new BoardHandler(...JSON.parse(rawData));
     }
 
-    static createBoardFromTemplate(mapArr) {
+    static createFromTemplate(mapArr) {
         const shallowArr = [...mapArr];
         const mapStr = shallowArr.pop();
 

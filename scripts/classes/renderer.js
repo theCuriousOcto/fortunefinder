@@ -1,5 +1,5 @@
 export default class Renderer {
-    static renderFullBoard(map) {
-        
+    static renderFullBoard(gameGrid, map) {
+        gameGrid.innerHTML = "";
     }
 }
