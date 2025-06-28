@@ -62,6 +62,12 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 
 ## Dev Log
 
+### 6/27/25
+
+Made progress on the setup screen dropdown menu.
+
+Questioning whether or not the class/object organization is too... much.
+
 ### 6/26/25
 
 Continued work on BoardHandler, GridSquare, GridStates, MapTemplates, Renderer, and more.

@@ -1,5 +1,6 @@
-class GameHandler {
-    static init() {
-        
+const GameHandler = {
+    ELs: {
+        gridEl: document.querySelector("game-grid"),
+
     }
 }

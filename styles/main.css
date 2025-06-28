@@ -55,6 +55,25 @@ h1, h2 {
     overflow: hidden;
 }
 
+#setup-scroll-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-image: var(--setup-screen);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -100%);
+    transition: transform 0.4s ease;
+    z-index: 10;
+}
+
+#setup-scroll-container.open {
+    transform: translate(-50%, 0);
+}
+
 #splash-screen-container {
     display: block;
     position: absolute;
@@ -67,7 +86,7 @@ h1, h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -3;
 }
 
 #game-grid {
@@ -122,7 +141,7 @@ h1, h2 {
 
 #lvl-tracker {
     grid-area: level;
-    min-height: 25px;
+    height: 40px;
 }
 
 #sidebar {
@@ -137,6 +156,9 @@ h1, h2 {
     top: 5px;
     right: 5px;
     z-index: 10;
+    background-image: var(--square-background);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #menu-bars:hover {
@@ -151,7 +173,6 @@ h1, h2 {
     width: 45px;
     height: 12px;
     transition: 0.4s;
-    background-color: #333;
     background-image: var(--menu-bar);
     background-repeat: no-repeat;
     background-size: contain;
@@ -176,8 +197,8 @@ h1, h2 {
     position: relative;
 }
 
-#menu-btns {
-    height: calc(100% - 25px);
+#menu-btns, #player-stats {
+    height: calc(100% - 40px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -186,16 +207,29 @@ h1, h2 {
 }
 
 .menu-btn {
+    cursor: pointer;
+    height: max(1vh, 9vh);
+    width: max(1vw, 10vw);
+    font-size: 16px;
     background-image: var(--menu-button);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border: none;
+}
+
+.menu-btn:hover {
+    transform: scale(105%);
+}
+
+.menu-btn:active {
+    transform: scale(95%);
 }
 
 #menu-helper {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 25px;
+    height: 40px;
     width: 100%;
 }

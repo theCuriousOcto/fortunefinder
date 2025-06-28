@@ -18,8 +18,8 @@ function preventContext(el) {
 }
 
 const EventHandler = {
-    init(boardEl) {
-        preventContext(boardEl);
+    init(ELs) {
+        preventContext(ELs.gridEl);
     },
     
     hookUpSquare(squareEl) {
