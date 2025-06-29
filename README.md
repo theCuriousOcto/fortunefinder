@@ -62,6 +62,10 @@ Play a quick game on its own, or go for endless mode and keep going until you ca
 
 ## Dev Log
 
+### 6/28/25
+
+Adjusted some names for the options screen menu (previously the setup screen).
+
 ### 6/27/25
 
 Made progress on the setup screen dropdown menu.

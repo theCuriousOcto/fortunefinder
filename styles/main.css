@@ -55,7 +55,7 @@ h1, h2 {
     overflow: hidden;
 }
 
-#setup-scroll-container {
+#options-screen-container {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -70,7 +70,7 @@ h1, h2 {
     z-index: 10;
 }
 
-#setup-scroll-container.open {
+#options-screen-container.open {
     transform: translate(-50%, 0);
 }
 
@@ -211,6 +211,7 @@ h1, h2 {
     height: max(1vh, 9vh);
     width: max(1vw, 10vw);
     font-size: 16px;
+    background-color: transparent;
     background-image: var(--menu-button);
     background-position: center;
     background-size: contain;
